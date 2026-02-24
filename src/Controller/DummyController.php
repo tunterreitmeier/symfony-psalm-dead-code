@@ -4,6 +4,7 @@ declare(strict_types=1);
 namespace App\Controller;
 
 use App\Controller\Request\DummyRequest;
+use mysqli;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
@@ -21,8 +22,8 @@ class DummyController extends AbstractController
         return $this->json($payload->foo);
     }
 
-    public function unusedMethod(): void
+    public function unusedMethod(mysqli $mysqli): void
     {
-
+        $mysqli->close();
     }
 }

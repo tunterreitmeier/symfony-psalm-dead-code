@@ -7,3 +7,4 @@
 - unused class: [UnusedClass](src/UnusedClass.php)
 - unused method in controller: [DummyController](src/Controller/DummyController.php)
 - unsed method in MessageHandler: [DummyMessageHandler](src/Handler/DummyHandler.php)
+- unused factory [UnusedFactory](src/Container/UnusedFactory.php)
