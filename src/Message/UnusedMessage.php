@@ -3,6 +3,7 @@ declare(strict_types=1);
 
 namespace App\Message;
 
-final class MyMessage
+final class UnusedMessage
 {
+
 }
