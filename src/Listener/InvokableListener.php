@@ -6,11 +6,11 @@ namespace App\Listener;
 use Symfony\Component\EventDispatcher\Attribute\AsEventListener;
 use Symfony\Component\HttpKernel\Event\RequestEvent;
 
-final class MyListener
+#[AsEventListener]
+final class InvokableListener
 {
     /** @psalm-suppress UnusedParam */
-    #[AsEventListener]
-    public function onEvent(RequestEvent $event): void
+    public function __invoke(RequestEvent $event): void
     {
         //noop
     }
