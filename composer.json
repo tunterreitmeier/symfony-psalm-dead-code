@@ -37,6 +37,7 @@
         "symfony/twig-bundle": "7.4.*",
         "symfony/validator": "7.4.*",
         "symfony/web-link": "7.4.*",
+        "symfony/webhook": "7.4.*",
         "symfony/yaml": "7.4.*",
         "twig/twig": "^2.12|^3.0"
     },

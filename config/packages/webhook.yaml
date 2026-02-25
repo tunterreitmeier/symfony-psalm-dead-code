@@ -1,0 +1,6 @@
+framework:
+  webhook:
+    routing:
+      dummy:
+        service: App\Webhook\DummyRequestParser
+        secret: your_secret_here
