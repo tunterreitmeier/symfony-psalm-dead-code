@@ -34,3 +34,12 @@ jobs:
 
       - name: Run Psalm
         run: vendor/bin/psalm --no-progress
+
+      - name: Install psalm/plugin-symfony from fork
+        run: |
+          composer config repositories.psalm-plugin-symfony vcs https://github.com/tunterreitmeier/psalm-plugin-symfony
+          composer require --dev psalm/plugin-symfony:dev-fix/mark-symfony-usages --no-scripts --no-progress
+
+      - name: Run Psalm with symfony plugin (showcase)
+        run: vendor/bin/psalm --no-progress --no-cache --output-format=github
+        continue-on-error: true
