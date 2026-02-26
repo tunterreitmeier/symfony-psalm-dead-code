@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Command;
 
 use Symfony\Component\Console\Attribute\AsCommand;
@@ -21,10 +23,7 @@ class DummyCommand extends Command
         parent::__construct();
     }
 
-    public function unusedMethod(): void
-    {
-
-    }
+    public function unusedMethod(): void {}
 
     protected function configure(): void
     {

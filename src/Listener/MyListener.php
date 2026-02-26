@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace App\Listener;
@@ -12,11 +13,8 @@ final class MyListener
     #[AsEventListener]
     public function onEvent(RequestEvent $event): void
     {
-        //noop
+        // noop
     }
 
-    public function unusedMethod(): void
-    {
-
-    }
+    public function unusedMethod(): void {}
 }

@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace App\Container;
@@ -6,7 +7,8 @@ namespace App\Container;
 final class DummyFactory
 {
     /**
-     * Used by container
+     * Used by container.
+     *
      * @see services.yaml
      */
     public function createDummy(): \mysqli
@@ -14,8 +16,5 @@ final class DummyFactory
         return new \mysqli('test');
     }
 
-    public function  unsuedOtherMethod(): void
-    {
-
-    }
+    public function unsuedOtherMethod(): void {}
 }
